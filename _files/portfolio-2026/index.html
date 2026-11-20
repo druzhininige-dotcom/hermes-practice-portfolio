@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Портфолио — Артём Дружинин</title>
+<style>
+  body{font-family:Segoe UI,Arial,sans-serif;background:#f6f7f9;color:#1b1f24;margin:0;padding:40px 16px}
+  .card{max-width:640px;margin:0 auto;background:#fff;border-radius:14px;padding:28px 32px;box-shadow:0 2px 14px rgba(0,0,0,.07)}
+  h1{font-size:22px;margin:0 0 6px}
+  p{line-height:1.55;margin:10px 0}
+  .muted{color:#5b6470;font-size:14px}
+  a.btn{display:inline-block;margin-top:16px;padding:13px 22px;background:#1f6feb;color:#fff;border-radius:9px;text-decoration:none;font-weight:600}
+  a.btn:hover{background:#1a5fd0}
+  ul{margin:14px 0 0 18px;padding:0}
+  li{margin:5px 0}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Портфолио 2026 — Артём Дружинин</h1>
+  <p class="muted">ИИ-агенты, автоматизация маркетплейсов, сметы и себестоимость, RAG, LangGraph, n8n, Telegram-боты.</p>
+  <p>Девять работающих проектов: задача → что сделано → результат → стек.</p>
+  <a class="btn" id="dl" href="#" download>Скачать портфолио (.docx)</a>
+  <p id="hint" class="muted">Если кнопка не срабатывает — откройте страницу в браузере на компьютере.</p>
+  <ul class="muted">
+    <li>Бот с кейсами и аудио-версией: <a href="https://t.me/DEXI_portfolio_bot">@DEXI_portfolio_bot</a></li>
+    <li>Контакты: +7 (914) 678-92-22 · druzhinin.artem@bk.ru · @bars0636</li>
+  </ul>
+</div>
+<script>
+fetch('Портфолио_Дружинин_2026-11-20.docx.b64.b64')
+  .then(r => r.text())
+  .then(b64 => {
+    const bin = atob(b64.trim());
+    const bytes = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    const url = URL.createObjectURL(new Blob([bytes], {
+      type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+    }));
+    const a = document.getElementById('dl');
+    a.href = url;
+    a.setAttribute('download', 'Портфолио_Дружинин_2026-11-20.docx.b64');
+  })
+  .catch(e => { document.getElementById('hint').textContent = 'Файл не загрузился: ' + e; });
+</script>
+</body>
+</html>
