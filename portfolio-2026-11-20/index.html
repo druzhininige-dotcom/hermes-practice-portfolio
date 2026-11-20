@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Артём Дружинин — портфолио</title>
+<style>
+  body{font-family:Segoe UI,Arial,sans-serif;background:#eef1f5;color:#1b1f24;margin:0;padding:32px 14px}
+  .card{max-width:640px;margin:0 auto 18px;background:#fff;border-radius:14px;padding:26px 30px;box-shadow:0 2px 14px rgba(0,0,0,.08)}
+  h1{font-size:22px;margin:0 0 4px}
+  h2{font-size:17px;margin:22px 0 8px;color:#1f6feb}
+  p{line-height:1.55;margin:9px 0}
+  .muted{color:#5b6470;font-size:14px}
+  a.btn{display:inline-block;margin-top:14px;padding:13px 22px;background:#1f6feb;color:#fff;border-radius:9px;text-decoration:none;font-weight:600}
+  a.btn.alt{background:#128c7e}
+  .item{border-top:1px solid #eceff3;padding:11px 0}
+  .item b{display:block;font-size:15px}
+  .item span{color:#4a5361;font-size:14px;line-height:1.45;display:block;margin-top:3px}
+  .stack{color:#7a828e;font-size:12.5px}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Артём Дружинин — портфолио 2026</h1>
+  <p class="muted">ИИ-агенты, автоматизация маркетплейсов, сметы и себестоимость, RAG, LangGraph, n8n, Telegram-боты.</p>
+  <p>Девять работающих проектов: задача → что сделано → результат → стек. Резюме прикладываю отдельным файлом.</p>
+  <a class="btn alt" href="https://t.me/DEXI_portfolio_bot">Открыть в Telegram: @DEXI_portfolio_bot</a>
+  <p class="muted">В боте — кейсы, скриншоты и аудио-версия. Файлом: <a href="Druzhinin_Portfolio_2026-11-20.html">версия на одной странице</a> / <a href="https://raw.githubusercontent.com/druzhininige-dotcom/hermes-practice-portfolio/main/_files/portfolio-2026/Druzhinin_Portfolio_2026-11-20.docx">скачать .docx</a>.</p>
+
+  <h2>Проекты</h2>
+  <div class="item"><b>1. Telegram-бот смет</b><span>Раскрой из PRO100 приходит в бота одним сообщением — обратно готовый .xlsx на 9 листов: ЛДСП целыми листами, кромка отдельно, фурнитура, работы, карта раскроя. Работает на реальных заказах мебельного цеха.</span><span class="stack">Python, aiogram 3, openpyxl</span></div>
+  <div class="item"><b>2. Аналитика маркетплейсов</b><span>Экономика по артикулам, воронка категорий, отзывы и ответы через официальный API WB/Ozon. Все обращения идут через один клиент с интервалами: лимиты площадок — часть архитектуры. Магазин DEXI, 900+ артикулов в выгрузке.</span><span class="stack">Python, REST API WB/Ozon</span></div>
+  <div class="item"><b>3. 3D-конструктор мебели</b><span>Клиент выбирает параметры кухни — получает 3D-сцену, раскрой и смету по прайсу цеха. Деньги считает код по прайсу, нейросеть только рисует картинку.</span><span class="stack">Python, Flask, Three.js</span></div>
+  <div class="item"><b>4. Lid_AI — радар лидов</b><span>Сообщения из Telegram-чатов классифицируются по профилям услуг, на каждого лида собирается карточка. Восемь модулей тестов, ежедневный прогон по 40+ чатам.</span><span class="stack">Python, Telethon, LLM, SQLite, pytest</span></div>
+  <div class="item"><b>5. Мини-RAG по рабочим документам</b><span>Ответы по 8 документам со ссылкой на источник и честное «в документах нет», если ответа нет в корпусе. Hit@3 = 92,3 % (12 из 13), MRR = 0,923.</span><span class="stack">Python, embeddings, реранк, LLM-судья</span></div>
+  <div class="item"><b>6. LangGraph-агент маржи</b><span>По товару и цене даёт решение «брать из Китая или нет». Маржу и порог считает Python на Decimal, LLM пишет только пояснение; если данных не хватает — агент спрашивает, а не придумывает. 8 узлов, 17 тестов.</span><span class="stack">Python, LangGraph, Decimal</span></div>
+  <div class="item"><b>7. n8n на своём железе</b><span>Три сценария без ручного запуска: курс ЦБ в Telegram, расчёт себестоимости в таблице, разбор LLM-шаблона. Порт только на localhost, данные не уходят наружу.</span><span class="stack">n8n, Docker, WSL2, Google Sheets API</span></div>
+  <div class="item"><b>8. Telegram-боты</b><span>Бот смет, FSM-анкета заявок, черновики ответов на отзывы покупателей: агент готовит, менеджер отправляет. Три бота в работе.</span><span class="stack">Python, aiogram 3, Bot API</span></div>
+  <div class="item"><b>9. Юнит-экономика маркетплейса</b><span>Себестоимость и маржа по артикулу с учётом комиссии, логистики, хранения, рекламы и возвратов; отчёт «где теряем деньги» для владельца магазина.</span><span class="stack">Python, openpyxl</span></div>
+
+  <h2>Контакты</h2>
+  <p>+7 (914) 678-92-22 · druzhinin.artem@bk.ru · Telegram @bars0636 · Владивосток, работаю по МСК с 10:00</p>
+</div>
+</body>
+</html>
