@@ -30,7 +30,7 @@
   </ul>
 </div>
 <script>
-fetch('Портфолио_Дружинин_2026-11-20.docx.b64.b64')
+fetch('Druzhinin_Portfolio_2026-11-20.docx.b64')
   .then(r => r.text())
   .then(b64 => {
     const bin = atob(b64.trim());
@@ -41,7 +41,7 @@ fetch('Портфолио_Дружинин_2026-11-20.docx.b64.b64')
     }));
     const a = document.getElementById('dl');
     a.href = url;
-    a.setAttribute('download', 'Портфолио_Дружинин_2026-11-20.docx.b64');
+    a.setAttribute('download', 'Druzhinin_Portfolio_2026-11-20.docx');
   })
   .catch(e => { document.getElementById('hint').textContent = 'Файл не загрузился: ' + e; });
 </script>
