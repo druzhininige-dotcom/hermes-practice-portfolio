@@ -22,7 +22,7 @@
   <h1>Портфолио 2026 — Артём Дружинин</h1>
   <p class="muted">ИИ-агенты, автоматизация маркетплейсов, сметы и себестоимость, RAG, LangGraph, n8n, Telegram-боты.</p>
   <p>Девять работающих проектов: задача → что сделано → результат → стек.</p>
-  <a class="btn" id="dl" href="#" download>Скачать портфолио (.docx)</a>
+  <a class="btn" id="dl" href="https://raw.githubusercontent.com/druzhininige-dotcom/hermes-practice-portfolio/main/_files/portfolio-2026/Druzhinin_Portfolio_2026-11-20.docx" download="Druzhinin_Portfolio_2026-11-20.docx">Скачать портфолио (.docx)</a>
   <p id="hint" class="muted">Если кнопка не срабатывает — откройте страницу в браузере на компьютере.</p>
   <ul class="muted">
     <li>Бот с кейсами и аудио-версией: <a href="https://t.me/DEXI_portfolio_bot">@DEXI_portfolio_bot</a></li>
@@ -30,7 +30,7 @@
   </ul>
 </div>
 <script>
-fetch('Druzhinin_Portfolio_2026-11-20.docx.b64')
+fetch('Портфолио_Дружинин_2026-11-20.docx.b64')
   .then(r => r.text())
   .then(b64 => {
     const bin = atob(b64.trim());
@@ -41,7 +41,7 @@ fetch('Druzhinin_Portfolio_2026-11-20.docx.b64')
     }));
     const a = document.getElementById('dl');
     a.href = url;
-    a.setAttribute('download', 'Druzhinin_Portfolio_2026-11-20.docx');
+    a.setAttribute('download', 'Портфолио_Дружинин_2026-11-20.docx');
   })
   .catch(e => { document.getElementById('hint').textContent = 'Файл не загрузился: ' + e; });
 </script>
